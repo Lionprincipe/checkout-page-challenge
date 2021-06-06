@@ -5,9 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Checkout Page | Challenge</title>
   </head>
   <body>
-    hello checkout
+    <main>
+      <h1>Checkout</h1>
+      <div class="checkout__summary__card">
+        <div class="item__card">
+          <picture>
+            <img src="./images/photo1.png" alt="" />
+          </picture>
+          <div class="item__card__details">
+            <div>
+              <div class="item__label small__text__size">Vintage Backbag</div>
+              <div class="prices__group">
+                <span class="price__tag medium__text__size">$54.99</span>
+                <span class="price__tag mini__text__size">$94.99</span>
+              </div>
+            </div>
+            <div class="item__quantity__tray">
+              <button>-</button> <span>1</span> <button>+</button>
+            </div>
+          </div>
+        </div>
+        <div class="item__card">
+          <picture>
+            <img src="./images/photo2.png" alt="" />
+          </picture>
+
+          <div class="item__card__details">
+            <div>
+              <div class="item__label small__text__size">Levi Shoes</div>
+              <div class="prices__group">
+                <span class="price__tag medium__text__size">$74.99</span>
+                <span class="price__tag mini__text__size">$124.99</span>
+              </div>
+            </div>
+            <div class="item__quantity__tray">
+              <button>-</button> <span>1</span> <button>+</button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing__info medium__text__size">
+          <div class="pricing__info__row">
+            <span>Shipping</span>
+            <span>$19</span>
+          </div>
+          <div class="pricing__info__row">
+            <span class=>Total</span>
+            <span>$148.98</span>
+          </div>
+        </div>
+      </div>
+      <!-- checkout form  -->
+      <form class="checkout__form">
+        <div class="fields__group">
+        <h2 class="fields__group__title medium__text_size">Contact infomation</h2>
+        <label class="input__field">
+          <div>E-mail</div>
+          <div class="text__input__container">
+            <input class="small__text__size" type="email" placeholder="Enter your email..." />
+          </div>
+        </label>
+        <label class="input__field">
+          <div>Phone</div>
+          <div class="text__input__container">
+            <input class="small__text__size" type="tel" placeholder="Enter your phone..." />
+          </div>
+        </label>
+        </div>
+        <div class="fields__group">
+        <h2 class="fields__group__title medium__text_size">Shipping address</h2>
+        <label class="input__field">
+          <div>Full name</div>
+          <div class="text__input__container">
+            <input class="small__text__size" type="text" value="Rodney Cotton" placeholder="Enter your email..." />
+          </div>
+        </label>
+        <label class="input__field">
+          <div>Address</div>
+          <div class="text__input__container">
+            <input class="small__text__size" type="text" placeholder="Your address..." />
+          </div>
+        </label>
+        <label class="input__field">
+          <div>City</div>
+          <div class="text__input__container">
+            <input class="small__text__size" type="text" placeholder="Your city..." />
+          </div>
+        </label>
+        <div class="grouped__input__field">
+        <label class="input__field input_field__small__width">
+          <div>Country</div>
+          <div class="text__input__container ">
+            <input class="small__text__size" type="text" placeholder="Your country..." />
+          </div>
+        </label>
+        <label class="input__field input_field__small__width  ">
+          <div>Postal code</div>
+          <div class="text__input__container">
+            <input class="small__text__size" type="text" placeholder="Your Postal code..." />
+          </div>
+        </label>
+        </div>
+        </div>
+        <label class="term__of__service">
+          <input type="checkbox" name="" id="">
+          <span class="mini__text__size ">Save this information for next time</span>
+        </label>
+        <button class="btn-primary" type="submit">Continue</button>
+      </form>
+    </main>
+ <footer>
+      <p>
+        created by
+        <strong
+          ><a href="https://devchallenges.io/portfolio/Lionprincipe"
+            >@Lionprincipe</a
+          ></strong
+        >
+        - devChallenges.io
+      </p>
+    </footer>
   </body>
 </html>
