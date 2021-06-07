@@ -163,6 +163,15 @@ input {
   display: flex;
   border-radius: 12px;
   padding: 0.4em;
+  display: flex;
+  align-items: center;
+}
+
+.text__input__container .material-icons {
+  font-size: 1.5em;
+  color: #828282;
+  margin-right: 0.4em;
+  margin-left: 0.4em;
 }
 
 .input__field {
@@ -323,6 +332,11 @@ footer p strong {
     min-height: 5.6em;
     padding: 0.8em;
   }
+  .text__input__container .material-icons {
+    font-size: 2em;
+    color: #828282;
+  }
+
   .item__card .medium__text__size,
   .item__card .small__text__size,
   .text__input__container .small__text__size {
