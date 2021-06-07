@@ -2,12 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  margin-block: 0;
 }
 
 html {
   font-size: 16px;
   font-style: normal;
 }
+
 button {
   border: none;
   background: transparent;
@@ -17,17 +19,21 @@ a {
   text-decoration: none;
   color: currentColor;
 }
+
 body {
   font-size: 62.5%;
   font-weight: 600;
   font-family: Monserrat, sans-serif;
   color: #4e5150;
-  padding-bottom: 136px;
+  padding-bottom: 13.6em;
+  position: relative;
 }
 
 main {
   padding: 3.2em 1.2em 0;
+  min-width: 375px;
 }
+
 h1 {
   padding-left: 0.167em;
   font-family: Montserrat;
@@ -58,7 +64,7 @@ input {
 }
 
 .item__card .item__label {
-  padding-bottom: 10px;
+  padding-bottom: 0.83em;
 }
 
 .item__card .price__tag.medium__text__size {
@@ -71,13 +77,15 @@ input {
   text-decoration: line-through;
 }
 
-.checkout__form,
-.checkout__summary__card {
-  margin-top: 5.1em;
+.checkout__form {
+  margin-top: 3.9em;
 }
 
 .checkout__summary__card {
-  padding: 0 2.6em;
+  margin-top: 2.1em;
+  padding: 3.1em 2.6em 1.6em;
+  border-radius: 12px;
+  background-color: #f2f2f2;
 }
 
 .item__card {
@@ -89,6 +97,7 @@ input {
   width: 12.4em;
   border-radius: 13px;
 }
+
 .item__card__details {
   padding-left: 1.8em;
 }
@@ -99,13 +108,13 @@ input {
 
 .item__quantity__tray {
   border: 1px solid #828282;
-  height: 50px;
+  height: 5em;
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 0 1em;
   border-radius: 12px;
   align-items: center;
-  width: 122px;
+  width: 11.2em;
 }
 
 .item__card__details {
@@ -115,13 +124,13 @@ input {
 }
 
 .item__quantity__tray button {
-  width: 20px;
-  height: 20px;
+  width: 1.05em;
+  height: 1.05em;
   border-radius: 4px;
   background: #e0e0e0;
   border: none;
-  font-size: 19px;
-  line-height: 20px;
+  font-size: 1.9em;
+  line-height: 1.05em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,71 +138,80 @@ input {
 }
 
 .item__card:not(:first-child) {
-  padding-top: 29px;
+  padding-top: 2.9em;
 }
 
 .pricing__info {
-  padding-top: 87.5px;
+  padding-top: 8.75em;
 }
 
 .pricing__info__row {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #bdbdbd;
-  padding: 10px 0;
+  padding: 0.71em 0;
 }
 
 .fields__group__title {
-  margin-bottom: 10px;
+  margin-bottom: 0.79em;
 }
 
 .text__input__container {
-  margin-top: 5px;
+  margin-top: 0.5em;
   border: 1px solid #828282;
-  min-height: 40px;
+  min-height: 4em;
   display: flex;
   border-radius: 12px;
-  padding: 4px;
+  padding: 0.4em;
 }
 
 .input__field {
-  margin-bottom: 16.5px;
+  margin-bottom: 1.6em;
   display: block;
+}
+
+.input__field.small__bottom__space {
+  margin-bottom: 1.13em;
 }
 
 .grouped__input__field {
   display: flex;
   justify-content: space-between;
 }
+
 .grouped__input__field .input__field {
-  width: 162px;
+  width: 16.2em;
 }
+
 .term__of__service {
   display: flex;
 }
+
 .term__of__service input {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 1.6em;
+  height: 1.6em;
+  font-size: 1em;
   border-radius: 4px;
-  margin-right: 8px;
+  margin-right: 0.8em;
 }
 
 .btn-primary {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1.6em;
+  line-height: 1.25em;
   background: #f2994a;
   color: #fff;
   display: block;
-  min-width: 166px;
-  padding: 17px 45px;
+  min-width: 10.375em;
+  padding: 1.06em 2.81em;
   border-radius: 12px;
-  margin-top: 20.5px;
+  margin-top: 1.28em;
   margin-left: auto;
   margin-right: 0;
 }
+
 .fields__group:not(:first-child) {
-  padding-top: 24px;
+  padding-top: 3.2em;
 }
 
 footer {
@@ -204,12 +222,139 @@ footer {
   padding-bottom: 2.4em;
   font-weight: 500;
 }
+
 footer p {
   text-align: center;
   font-size: 1.4em;
   line-height: 1.21em;
   color: #b9bdcf;
 }
+
 footer p strong {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 786px) {
+  body {
+    font-size: 16px;
+  }
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 786px) and (max-width: 1080px) {
+  body {
+    font-size: 20px;
+  }
+  main {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  body {
+    padding-bottom: 20em;
+  }
+  main {
+    padding: 6.4em 0 0;
+    max-width: 96em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  main h1 {
+    flex-basis: 100%;
+    font-size: 3.6em;
+    line-height: 1.22em;
+    margin-bottom: 1.4em;
+  }
+
+  .checkout__summary__card {
+    margin-top: 1.1em;
+    padding: 3.4em 2.7em 1.6em 3em;
+    min-width: 38.3em;
+    margin-left: 11.2em;
+    height: fit-content;
+  }
+  .pricing__info {
+    padding-top: 9.53em;
+  }
+  .item__card:not(:first-child) {
+    padding-top: 3.2em;
+  }
+
+  .checkout__form {
+    width: 46.5em;
+    margin-top: 0;
+  }
+
+  .pricing__info .medium__text__size,
+  .checkout__form .fields__group__title {
+    font-size: 1.8em;
+    line-height: 1.22em;
+  }
+  .checkout__form .fields__group__title {
+    margin-bottom: 0.83em;
+  }
+  .pricing__info .medium__text__size {
+    padding: 0.55em 0;
+  }
+
+  .price__tag.mini__text__size,
+  .term__of__service .mini__text__size,
+  .input__field .mini__text__size {
+    font-size: 1.2em;
+    line-height: 1.25em;
+  }
+
+  .text__input__container {
+    margin-top: 0.7em;
+    min-height: 5.6em;
+    padding: 0.8em;
+  }
+  .item__card .medium__text__size,
+  .item__card .small__text__size,
+  .text__input__container .small__text__size {
+    font-size: 1.6em;
+    line-height: 1.25em;
+  }
+  .grouped__input__field .input__field {
+    width: 21.7em;
+  }
+  .item__card img {
+    display: block;
+    width: 13.4em;
+    border-radius: 13px;
+  }
+  .item__quantity__tray {
+    width: 13.4em;
+    height: 5.2em;
+  }
+  .item__card__details {
+    padding-left: 2em;
+  }
+  .fields__group:not(:first-child) {
+    padding-top: 4.2em;
+  }
+  .input__field {
+    margin-bottom: 2em;
+  }
+  .input__field.small__bottom__space {
+    margin-bottom: 1.3em;
+  }
+  .term__of__service input {
+    width: 2em;
+    height: 2em;
+  }
 }
