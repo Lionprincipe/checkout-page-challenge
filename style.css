@@ -42,10 +42,12 @@ h1 {
   font-size: 2.4em;
   line-height: 1.21em;
 }
+
 input {
   border: none;
   display: block;
   width: 100%;
+  outline: none;
 }
 
 .medium__text__size {
